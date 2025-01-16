@@ -2,7 +2,7 @@
     "name": "topshelfcraft/conditions",
     "description": "Craft CMS field types for editing and storing Condition Rules",
     "type": "craft-plugin",
-    "version": "4.0.0-beta.2",
+    "version": "5.0.0-beta.1",
     "keywords": [
         "craft",
         "cms",
@@ -26,7 +26,7 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^4.4",
+        "craftcms/cms": "^5.0.0",
         "topshelfcraft/base": "^4.0.1"
     },
     "autoload": {
@@ -38,5 +38,11 @@
         "name": "Conditions",
         "handle": "conditions",
         "class": "TopShelfCraft\\Conditions\\Conditions"
+    },
+    "config": {
+        "allow-plugins": {
+            "yiisoft/yii2-composer": true,
+            "craftcms/plugin-installer": true
+        }
     }
 }

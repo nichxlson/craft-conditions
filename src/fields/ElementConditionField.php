@@ -33,7 +33,7 @@ class ElementConditionField extends Field
 		return Schema::TYPE_TEXT;
 	}
 
-	protected function inputHtml(mixed $value, ?ElementInterface $element = null): string
+	protected function inputHtml(mixed $value, ?ElementInterface $element, bool $inline): string
 	{
 
 		$condition = $value instanceof ElementConditionInterface
